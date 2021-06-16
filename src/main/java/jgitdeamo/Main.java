@@ -23,6 +23,7 @@ public class Main {
         cmds.add("git add .");
         cmds.add("git status");
         cmds.add("git commit -m 'update'");
+        cmds.add("git remote add test2 https://github.com/lshjhf/test1.git");
         cmds.add("git push");
 
 
