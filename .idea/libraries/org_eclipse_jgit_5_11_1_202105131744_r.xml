@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipse.jgit-5.11.1.202105131744-r">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/org.eclipse.jgit-5.11.1.202105131744-r.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
