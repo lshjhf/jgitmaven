@@ -21,10 +21,11 @@ public class Main {
         cmds.add("git init");
         cmds.add("pwd");
         cmds.add("git add .");
-        cmds.add("git status");
+        cmds.add("git branch -M main");
+
         cmds.add("git commit -m 'update'");
-        cmds.add("git remote add test2 https://github.com/lshjhf/test1.git");
-        cmds.add("git push");
+        cmds.add("git remote add origin https://github.com/lshjhf/jgitmaven.git");
+        cmds.add("git push -u origin main");
 
 
         try {
