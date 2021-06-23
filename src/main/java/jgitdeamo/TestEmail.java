@@ -7,9 +7,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+//import org.dom4j.Attribute;
 
 
 public class TestEmail {
+    public TestEmail() {
+    }
+
     public static String readFileContent(String fileName) {
         File file = new File(fileName);
         BufferedReader reader = null;
@@ -67,5 +71,7 @@ public class TestEmail {
         boolean flag = EmailSend.EmailSendTest(email);
         System.err.println("邮件发送结果=="+flag);
     }
+
+
 
 }

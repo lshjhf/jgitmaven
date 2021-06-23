@@ -8,29 +8,56 @@ import org.junit.Test;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 命令行辅助工具
- * @author jzhung
  */
 public class Main {
 
+    public  static List<String> getFileContext1(String path) throws Exception {
+        FileReader fileReader =new FileReader(path);
+        BufferedReader bufferedReader =new BufferedReader(fileReader);
+        List<String> list =new ArrayList<String>();
+        String str=null;
+        while((str=bufferedReader.readLine())!=null) {
+            if(str.trim().length()>2) {
+                list.add(str);
+            }
+        }
+        return list;
+    }
+
     @Test
-    public void test() {
-        List<String> cmds = new ArrayList<>();
-        cmds.add("git init");
+    public void test() throws Exception {
+
+
+        //List<String> cmds = getFileContext1("/Users/daniel/Downloads/cmdcommit1.txt");
+       /* cmds.add("git branch ss");
+        cmds.add("git checkout ss");
+        cmds.add("git pull");
         cmds.add("pwd");
         cmds.add("git add .");
         cmds.add("git branch -M main");
 
         cmds.add("git commit -m 'update'");
         cmds.add("git remote add origin https://github.com/lshjhf/jgitmaven.git");
-        cmds.add("git push -u origin main");
+        cmds.add("git push -u origin main");*/
 
 
         try {
-            for (int i = 0; i < cmds.size(); i++) {
-                execute(cmds.get(i));
+            int i=0;
+            while(true) {
+                Scanner sc = new Scanner(System.in);
+
+                List<String> cmds = new ArrayList<String>();
+
+                String ad=sc.nextLine();
+                if (ad.equals("exit")) break;
+                cmds.add(ad);
+
+                execute(cmds.get(0));
+
                 System.out.println("-----------------------------------------------------");
             }
 
@@ -39,7 +66,7 @@ public class Main {
         }
     }
 
-    public static void execute(String cmd) throws IOException {
+    public static void execute(String cmd) throws Exception {
         Process process = Runtime.getRuntime().exec(cmd);
         InputStream inStream = process.getInputStream();
         InputStream errStream = process.getErrorStream();
@@ -48,9 +75,14 @@ public class Main {
         Reader reader = new InputStreamReader(bufStream, getDefaultEncoding());
         BufferedReader bufReader = new BufferedReader(reader);
         String line;
+        TestEmail a=new TestEmail();
+
         while ((line = bufReader.readLine()) != null) {
-            System.out.println(line);
-            if(line.contains("conflict")) break;
+
+            if(line.contains("Pulling without specifying how to reconcile"))
+            {//a.test();
+                break;}
+            else System.out.println(line);
         }
         inStream.close();
         errStream.close();

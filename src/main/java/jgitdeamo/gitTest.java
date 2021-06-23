@@ -114,7 +114,7 @@ public class gitTest {
 
 
     /**
-     * 本地提交代码
+     * 本地提交代码dddd
      */
     @Test
     public void testCommit() throws IOException, GitAPIException,
