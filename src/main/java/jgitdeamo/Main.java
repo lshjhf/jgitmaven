@@ -1,11 +1,11 @@
 package jgitdeamo;
-import org.eclipse.jgit.util.FileUtils;
-import org.eclipse.jgit.util.StringUtils;
+//import org.eclipse.jgit.util.FileUtils;
+//import org.eclipse.jgit.util.StringUtils;
 
 import java.io.*;
-import org.junit.Test;
+//import org.junit.Test;
 
-import java.io.*;
+//import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,8 +28,8 @@ public class Main {
         return list;
     }
 
-    @Test
-    public void test() throws Exception {
+
+    public static void main(String[] args) throws Exception {
 
 
         //List<String> cmds = getFileContext1("/Users/daniel/Downloads/cmdcommit1.txt");

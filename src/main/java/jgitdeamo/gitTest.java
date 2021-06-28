@@ -4,22 +4,22 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.internal.storage.file.FileRepository;
 import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.Ref;
+//import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.merge.MergeStrategy;
-import org.eclipse.jgit.merge.ResolveMerger;
-import org.eclipse.jgit.merge.Merger;
-import org.eclipse.jgit.revwalk.RevCommit;
+//import org.eclipse.jgit.merge.MergeStrategy;
+//import org.eclipse.jgit.merge.ResolveMerger;
+//import org.eclipse.jgit.merge.Merger;
+//import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
-import org.eclipse.jgit.treewalk.FileTreeIterator;
+//import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 
-import static org.junit.Assert.assertTrue;
+//import static org.junit.Assert.assertTrue;
 
 /**
  * JGit API测试
