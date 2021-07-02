@@ -80,7 +80,7 @@ public class Main {
         while ((line = bufReader.readLine()) != null) {
 
             if(line.contains("Pulling without specifying how to reconcile"))
-            {//a.test();
+            {a.test();
                 break;}
             else System.out.println(line);
         }
