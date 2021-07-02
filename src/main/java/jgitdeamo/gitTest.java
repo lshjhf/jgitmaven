@@ -38,7 +38,7 @@ public class gitTest {
 
 
     /**
-     * 克隆远程库
+     * 克隆远s程库
      * @throws IOException
      * @throws GitAPIException
      */

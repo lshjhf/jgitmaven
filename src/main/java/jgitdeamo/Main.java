@@ -80,7 +80,7 @@ public class Main {
         while ((line = bufReader.readLine()) != null) {
 
             if(line.contains("Pulling without specifying how to reconcile"))
-            {//a.test();
+            {a.test();
                  }
             else System.out.println(line);
         }
@@ -100,6 +100,6 @@ public class Main {
     public static String getOS() {
         String os = System.getProperty("os.name");
         System.out.println(os);
-        return /*abd*/os;
+        return /*998*/os;
     }
 }
