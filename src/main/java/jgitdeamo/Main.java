@@ -100,6 +100,6 @@ public class Main {
     public static String getOS() {
         String os = System.getProperty("os.name");
         System.out.println(os);
-        return os;
+        return /*abd*/os;
     }
 }
