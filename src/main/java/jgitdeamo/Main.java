@@ -79,7 +79,7 @@ public class Main {
 
         while ((line = bufReader.readLine()) != null) {
 
-            if(line.contains("Pulling without specifying how to reconcile"))
+            if(line.contains("Automatic merge failed; fix conflicts and then commit the result."))
             {a.test();
                  }
             else System.out.println(line);
@@ -100,6 +100,6 @@ public class Main {
     public static String getOS() {
         String os = System.getProperty("os.name");
         System.out.println(os);
-        return /*998*/os;
+        return /*abc*/os;
     }
 }
