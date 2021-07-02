@@ -1,21 +1,27 @@
 package jgitdeamo;
-import org.eclipse.jgit.api.*;
+
+import org.eclipse.jgit.api.CloneCommand;
+import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.api.MergeResult;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.internal.storage.file.FileRepository;
 import org.eclipse.jgit.lib.ObjectId;
-//import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
+import org.junit.Test;
+//import org.junit.jupiter.api.DynamicTest;
+
+import java.io.File;
+import java.io.IOException;
+
+//import org.eclipse.jgit.lib.Ref;
 //import org.eclipse.jgit.merge.MergeStrategy;
 //import org.eclipse.jgit.merge.ResolveMerger;
 //import org.eclipse.jgit.merge.Merger;
 //import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
-import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 //import org.eclipse.jgit.treewalk.FileTreeIterator;
-import org.junit.Test;
-import java.io.File;
-import java.io.IOException;
 //import java.util.ArrayList;
 //import java.util.List;
 

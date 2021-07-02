@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: daniel
+Build-Jdk: 1.8.0_275
+Main-Class: jgitdeamo.Main
+

@@ -58,7 +58,7 @@ public class TestEmail {
     public void test()throws Exception{
 
         EmailEntity email = new EmailEntity();
-        List s = getFileContext("t.txt");
+        List s = getFileContext("src/main/resources/t.txt");
         email.setUserName((String) s.get(0));
         email.setPassword((String) s.get(1));
         email.setHost("smtp.163.com");
